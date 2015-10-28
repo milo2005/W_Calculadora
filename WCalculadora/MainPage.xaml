@@ -33,12 +33,175 @@
             
             />
             
-        <Button Grid.Row="1" Grid.Column="0" Content="1"
+        <Button 
+                x:Name="btnUno"
+                Grid.Row="1" Grid.Column="0" Content="1"
                 VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
                 FontSize="40"
                 Background="#333333"
                 Foreground="White"
+                Margin="3" Click="onClick"
+                />
+        <Button 
+                x:Name="btnDos"
+                Grid.Row="1" Grid.Column="1" Content="2"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnTres"
+                Grid.Row="1" Grid.Column="2" Content="3"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="OnClick"
+                />
+        <Button 
+                x:Name="btnCuatro"
+                Grid.Row="2" Grid.Column="0" Content="4"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnCinco"
+                Grid.Row="2" Grid.Column="1" Content="5"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnSeis"
+                Grid.Row="2" Grid.Column="2" Content="6"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnSiete"
+                Grid.Row="3" Grid.Column="0" Content="7"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnOcho"
+                Grid.Row="3" Grid.Column="1" Content="8"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnNueve"
+                Grid.Row="3" Grid.Column="2" Content="9"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+                />
+        <Button 
+                x:Name="btnCero"
+                Grid.Row="4" Grid.Column="1" Content="0"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#333333"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
                 />
         
+        <Button
+                x:Name="btnMas"
+                Grid.Row="1" Grid.Column="3" Content="+"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#33b5e5"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+            />
+
+        <Button
+                x:Name="btnMenos"
+                Grid.Row="2" Grid.Column="3" Content="-"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#33b5e5"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+            />
+        <Button
+                x:Name="btnMul"
+                Grid.Row="3" Grid.Column="3" Content="*"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#33b5e5"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+            />
+
+        <Button 
+                x:Name="btnDiv"
+                Grid.Row="4" Grid.Column="3" Content="/"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#33b5e5"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"            
+
+            />
+
+        <Button 
+                x:Name="btnReset"
+                Grid.Row="4" Grid.Column="0" Content="C"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#22a575"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+            />
+
+        <Button 
+                x:Name="btnIgual"
+                Grid.Row="4" Grid.Column="2" Content="="
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                FontSize="40"
+                Background="#22a575"
+                Foreground="White"
+                Margin="3"
+                Click="onClick"
+            />
+
+
     </Grid>
 </Page>

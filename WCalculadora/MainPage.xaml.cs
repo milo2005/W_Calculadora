@@ -25,6 +25,77 @@ namespace WCalculadora
         public MainPage()
         {
             this.InitializeComponent();
+            
+        }
+
+        private void onClick(object sender, RoutedEventArgs e)
+        {
+
+            var btnSender = sender as Button;
+
+            switch (btnSender.Name) {
+
+                case "btnUno":
+
+                    break;
+
+                case "btnDos":
+
+                    break;
+
+                case "btnTres":
+
+                    break;
+
+                case "btnCuatro":
+
+                    break;
+
+                case "btnCinco":
+
+                    break;
+
+                case "btnSeis":
+
+                    break;
+
+                case "btnSiete":
+
+                    break;
+
+                case "btnOcho":
+
+                    break;
+
+                case "btnNueve":
+                    break;
+
+                case "btnCero":
+                    break;
+
+                case "btnSuma":
+                    
+                    break;
+
+                case "btnResta":
+                    break;
+
+                case "btnMul":
+                    break;
+
+                case "btnDiv":
+                    break;
+
+                case "btnReset":
+                    break;
+
+                case "btnIgual":
+                    break;
+
+
+            }
+
+
         }
     }
 }
