@@ -35,9 +35,7 @@ namespace WCalculadora
         public MainPage()
         {
             this.InitializeComponent();
-            num1 = "";
-            num2 = "";
-            op = 0;
+            
 
             
         }
@@ -113,17 +111,50 @@ namespace WCalculadora
         }
 
         public void resetData() {
-                          
+            num1 = "";
+            num2 = "";
+            op = 0;
+            txt.Text = "";
         }
 
-        public void insertNumber() {
+        public void insertNumber(string n) {
+            if (op == 0)
+            {
+                num1 = num1 + n;
+                txt.Text = num1;
+            }
+            else {
+                num2 = num2 + n;
+                txt.Text = num2;
+            }
 
         }
 
-        public void setOperation() {
+        public void setOperation(int operation) {
+            op = operation;
+            txt.Text = "";
         }
 
         public void makeOperation() {
+            int rta = 0;
+            int n1 = Convert.ToInt32(num1);
+            int n2 = Convert.ToInt32(num2);
+
+            switch (op) {
+                case SUMA:
+                    rta = n1 + n2;
+                    break;
+                case RESTA:
+                    rta = n1 - n2;
+                    break;
+                case MUL:
+                    rta = n1 * n2;
+                    break;
+                case DIV:
+                    rta = n1 / n2;
+                    break;
+            }
+            txt.Text = "" + rta;
 
         }
 
