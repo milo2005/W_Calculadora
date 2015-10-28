@@ -25,6 +25,7 @@
         </Grid.ColumnDefinitions>
         
         <TextBox
+            x:Name="txt"
             Grid.ColumnSpan="4"
             PlaceholderText="Numero"
             IsEnabled="False"

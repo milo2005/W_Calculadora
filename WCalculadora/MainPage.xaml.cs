@@ -22,9 +22,23 @@ namespace WCalculadora
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        const int SUMA = 1;
+        const int RESTA = 2;
+        const int MUL = 3;
+        const int DIV = 4;
+
+        string num1;
+        string num2;
+
+        int op;
+
         public MainPage()
         {
             this.InitializeComponent();
+            num1 = "";
+            num2 = "";
+            op = 0;
+
             
         }
 
@@ -97,5 +111,22 @@ namespace WCalculadora
 
 
         }
+
+        public void resetData() {
+                          
+        }
+
+        public void insertNumber() {
+
+        }
+
+        public void setOperation() {
+        }
+
+        public void makeOperation() {
+
+        }
+
+
     }
 }
