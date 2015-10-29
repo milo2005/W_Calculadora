@@ -35,7 +35,9 @@ namespace WCalculadora
         public MainPage()
         {
             this.InitializeComponent();
-            
+            num1 = "";
+            num2 = "";
+            op = 0;
 
             
         }
@@ -48,60 +50,67 @@ namespace WCalculadora
             switch (btnSender.Name) {
 
                 case "btnUno":
-
+                    insertNumber("1");
                     break;
 
                 case "btnDos":
-
+                    insertNumber("2");
                     break;
 
                 case "btnTres":
-
+                    insertNumber("3");
                     break;
 
                 case "btnCuatro":
-
+                    insertNumber("4");
                     break;
 
                 case "btnCinco":
-
+                    insertNumber("5");
                     break;
 
                 case "btnSeis":
-
+                    insertNumber("6");
                     break;
 
                 case "btnSiete":
-
+                    insertNumber("7");
                     break;
 
                 case "btnOcho":
-
+                    insertNumber("8");
                     break;
 
                 case "btnNueve":
+                    insertNumber("9");
                     break;
 
                 case "btnCero":
+                    insertNumber("0");
                     break;
 
-                case "btnSuma":
-                    
+                case "btnMas":
+                    setOperation(SUMA);
                     break;
 
-                case "btnResta":
+                case "btnMenos":
+                    setOperation(RESTA);
                     break;
 
                 case "btnMul":
+                    setOperation(MUL);
                     break;
 
                 case "btnDiv":
+                    setOperation(DIV);
                     break;
 
                 case "btnReset":
+                    resetData();
                     break;
 
                 case "btnIgual":
+                    makeOperation();
                     break;
 
 
@@ -132,7 +141,7 @@ namespace WCalculadora
 
         public void setOperation(int operation) {
             op = operation;
-            txt.Text = "";
+            txt.Text = " ";
         }
 
         public void makeOperation() {

@@ -61,7 +61,7 @@
                 Background="#333333"
                 Foreground="White"
                 Margin="3"
-                Click="OnClick"
+                Click="onClick"
                 />
         <Button 
                 x:Name="btnCuatro"
